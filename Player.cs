@@ -5,15 +5,15 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    //configuration parameters
+    // Configuration parameters
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float padding = 1f;
-    //laser gameObject
+    // Laser gameObject
     [SerializeField] GameObject laserPrefab;
     [SerializeField] float projectileVerticalSpeed = 10f;
     [SerializeField] float projectileFiringTime = 0.1f;
 
-    //initialize Coroutine to control it in shooting
+    // Initialize Coroutine to control it in shooting
     Coroutine firingCoroutine;
 
     float xMin;
